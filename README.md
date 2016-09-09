@@ -4,4 +4,13 @@ You can use any type of source that the standard jquery autocomplete can use.
 
 Usage:
 
-var control = new ComboBox("div#comboId",{inputCSS:{"min-width":"0"},autocomplete:{source:"/ajax/combosource.php"}});
+var comboOptions = {
+	inputCSS:{
+		"min-width":"0"
+	},
+	autocomplete:{
+		source:"/ajax/combosource.php"
+	}
+}
+
+var control = new ComboBox("div#comboId",comboOptions);
