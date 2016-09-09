@@ -3,14 +3,15 @@ An autocomplete enabled combo box control. Uses require.js and jQueryUI, but NOT
 You can use any type of source that the standard jquery autocomplete can use.
 
 Usage:
-
+```
 var comboOptions = {
-	inputCSS:{
-		"min-width":"0"
-	},
-	autocomplete:{
-		source:"/ajax/combosource.php"
-	}
+    inputCSS:{
+        "min-width":"0"
+    },
+    autocomplete:{
+        source:"/ajax/combosource.php"
+    }
 }
+```
 
-var control = new ComboBox("div#comboId",comboOptions);
+var control = new ComboBox("div#myCombo",comboOptions);
